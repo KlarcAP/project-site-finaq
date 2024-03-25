@@ -1,8 +1,8 @@
-import {Swiper, SwiperSlide} from 'Swiper/react';
-import Swiper from 'swiper';
+import SwiperCore, { SwiperSlide } from 'swiper';
+import { Swiper } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
 
-
-export default function  Carrosel() {
+export default function Carrosel() {
     
     const data = [
         { id: '1', image: 'src/assets/finaq-slide-financiamento-estudantil-2.png' },
@@ -12,14 +12,20 @@ export default function  Carrosel() {
     return(
 
         <div className="Container-carrosel">
-            <Swiper>
-            {data.map((item) =>(
-                <img
-                    src={item.image}
-                    alt='Carrosel'
-                    className='carrosel-item'
-                />
-            ))}
+            <Swiper 
+            slidesPerView={1} 
+            pagination={{clickable: true}} 
+            navigation
+            > 
+                {data.map((item) =>(
+                    <SwiperSlide key={item.id}>
+                        <img
+                            src={item.image}
+                            alt='Carrosel'
+                            className='carrosel-item'
+                        />
+                    </SwiperSlide>   
+                ))}
             </Swiper>
         </div>
     )
