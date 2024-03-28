@@ -1,6 +1,7 @@
-import SwiperCore, { SwiperSlide } from 'swiper';
-import { Swiper } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
+import { Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function Carrosel() {
     
@@ -12,10 +13,11 @@ export default function Carrosel() {
     return(
 
         <div className="Container-carrosel">
-            <Swiper 
-            slidesPerView={1} 
+            <Swiper  
+            slidesPerView={1}
             pagination={{clickable: true}} 
             navigation
+            loop
             > 
                 {data.map((item) =>(
                     <SwiperSlide key={item.id}>

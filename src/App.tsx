@@ -1,6 +1,6 @@
 import './App.css'
 import Carrosel from './components/carrosel/Carrosel'
-import Home from './components/navbar/NavBar'
+import NavBar from './components/navbar/NavBar'
 import {Swiper, SwiperSlide} from "swiper/react"
 
 function App() {
@@ -8,16 +8,16 @@ function App() {
     <main>
       <header>
         <div>
-          <Home/>
+          <NavBar/>
         </div>
       </header>
-      <section>
+      <div className='hero'>
         <Swiper>
           <SwiperSlide>
-            <Carrosel/>
+              <Carrosel/>
           </SwiperSlide>
         </Swiper>
-      </section>
+      </div>
     </main>
     
   )
