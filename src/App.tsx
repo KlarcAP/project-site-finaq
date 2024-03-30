@@ -1,12 +1,14 @@
-import './App.css'
+import './App.scss'
 import Carrosel from './components/carrosel/Carrosel'
+import Home from './components/home/Home'
 import NavBar from './components/navbar/NavBar'
 import {Swiper, SwiperSlide} from "swiper/react"
+import Sobre from './components/sobre/Sobre'
 
 function App() {
   return (
     <main>
-      <header>
+      <header className='container-header'>
         <div>
           <NavBar/>
         </div>
@@ -18,9 +20,16 @@ function App() {
           </SwiperSlide>
         </Swiper>
       </div>
+      <section>
+        <div>
+          <Home/>
+        </div>
+      </section>
+      <section>
+        <Sobre/>
+      </section>
     </main>
-    
-  )
+  );
 }
 
 export default App
