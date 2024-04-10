@@ -4,6 +4,8 @@ import Home from './components/home/Home'
 import NavBar from './components/navbar/NavBar'
 import {Swiper, SwiperSlide} from "swiper/react"
 import Sobre from './components/sobre/Sobre'
+import Beneficios from './components/beneficios/Beneficios'
+import ComoParticipar from './components/comoParticipar/comoParticipar'
 
 function App() {
   return (
@@ -27,6 +29,12 @@ function App() {
       </section>
       <section>
         <Sobre/>
+      </section>
+      <section>
+        <Beneficios/>
+      </section>
+      <section>
+        <ComoParticipar/>
       </section>
     </main>
   );
