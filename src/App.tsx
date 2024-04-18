@@ -33,7 +33,7 @@ function App() {
       <section>
         <Beneficios/>
       </section>
-      <section>
+      <section style={{padding: '60px 0', overflow: 'hidden'}}>
         <ComoParticipar/>
       </section>
     </main>
