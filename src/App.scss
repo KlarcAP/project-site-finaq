@@ -13,6 +13,7 @@ main{
   align-items: center;
   flex-direction: column;
 
+  /*Inicio do Cabeçalho*/
   .header {
     display: flex;
     box-shadow: 0 1.5rem 1rem rgba(0,0,0,.15);
@@ -62,8 +63,9 @@ main{
 
     }
 
-  }
+  } /*Fim do Cabeçalho*/
 
+  /*Inicio do Hero*/
   .hero {
     display: flex;
     background-image: url('src/assets/finaq-bg-query.png');
@@ -96,8 +98,9 @@ main{
 
     }
     
-  }
+  } /*Fim do Hero*/
 
+  /*Inicio do Home*/
   .container-home{
     padding: 0 0 30px 0;
     position: relative;
@@ -147,8 +150,9 @@ main{
         color: black;
       }
     }
-  }
+  } /*Fim do Home*/
 
+  /*Inicio do Sobre*/
   .container-about{
     background-color: #D96812;
     width: 1230px;
@@ -240,8 +244,9 @@ main{
         font-size: 16px;
       }
     }
-  }
+  } /*Fim do Sobre*/
 
+  /*Inicio dos Serviços*/
   .container-services{
     background-color: #fff9f7;
     width: 1230px;
@@ -317,8 +322,9 @@ main{
         }
       }
     }
-  }
+  } /*Fim dos Serviços*/
 
+  /*Inicio do ComoParticipar*/
   .container-comoParticipar{
     display: flex;
     flex-direction: column;
@@ -362,6 +368,7 @@ main{
           height: 150px;
           width: 150px;
           position: absolute;
+          margin: 24px 0px;
           left: 50%;
           top: 0%;
           transform: translate(-50%, -65%);
@@ -377,9 +384,11 @@ main{
             border: 2px solid var(--bg-green);
             width: 365px;
             height: 366px;
+            margin-top: 80px;
 
             h5{
               font-size: 20px;
+              margin: 0px 0px 24px;
               font-family: "Raleway", sans-serif;
               text-align: center;
               font-weight: bold;
@@ -387,6 +396,7 @@ main{
 
             p{
               display: block;
+              text-align: center;
               font-weight: 16px;
               margin-block-start: 1em;
               margin-block-end: 1em;
@@ -397,5 +407,5 @@ main{
         }
       }
     }
-  }
+  } /*Fim do ComoParticipar*/
 }

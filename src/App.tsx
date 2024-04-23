@@ -6,6 +6,7 @@ import {Swiper, SwiperSlide} from "swiper/react"
 import Sobre from './components/sobre/Sobre'
 import Beneficios from './components/beneficios/Beneficios'
 import ComoParticipar from './components/comoParticipar/comoParticipar'
+import Perguntas from './components/perguntas/Perguntas'
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
       </section>
       <section style={{padding: '60px 0', overflow: 'hidden'}}>
         <ComoParticipar/>
+      </section>
+      <section>
+        <Perguntas/>
       </section>
     </main>
   );
