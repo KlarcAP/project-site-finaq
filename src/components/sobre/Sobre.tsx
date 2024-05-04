@@ -1,6 +1,6 @@
 export default function Sobre(){
     return(
-        <div className="container-about">
+        <div id="Sobre" className="container-about">
             <div className="videoBox">
                 <a href="https://www.youtube.com/watch?v=gFvdzeJAq0A&list=RDgFvdzeJAq0A&index=1" className="play-btn">
                     <i className="bi bi-play-fill">
