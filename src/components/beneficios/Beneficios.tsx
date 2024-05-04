@@ -1,6 +1,6 @@
 export default function Beneficios(){
     return(
-        <div className='container-services'>
+        <div id="beneficios" className='container-services'>
             <div className="subTitle">
                 <h2>
                     <b>Benefícios</b>

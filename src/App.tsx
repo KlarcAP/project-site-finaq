@@ -8,6 +8,7 @@ import Beneficios from './components/beneficios/Beneficios'
 import ComoParticipar from './components/comoParticipar/comoParticipar'
 import Perguntas from './components/perguntas/Perguntas'
 
+
 function App() {
   return (
     <main>

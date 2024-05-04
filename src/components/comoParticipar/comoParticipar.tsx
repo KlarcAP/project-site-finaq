@@ -1,6 +1,6 @@
 export default function ComoParticipar () {
     return(
-        <div className="container-comoParticipar">
+        <div id="como-participar" className="container-comoParticipar">
             <div className="title">
                 <h2><b>Como Participar</b></h2>
                 <p>Seu <b>Caminho</b> para a Qualificação Profissional</p>
