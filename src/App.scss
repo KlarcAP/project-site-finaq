@@ -16,16 +16,15 @@ main{
   /*Inicio do Cabeçalho*/
   .header {
     display: flex;
-    box-shadow: 0 1.5rem 1rem rgba(0,0,0,.15);
-    align-items: center;
+    box-shadow: 0 1.5rem 2rem rgba(0,0,0,.10);
     justify-content: space-between;
     background-color: whitesmoke;
-    height: 4rem;
-    width: 1227px;
-    max-width: 100%;
-    z-index: 998;
-    margin: 0;
-    position: relative;
+    right: 0;
+    left: 0;
+    height: 4.2rem;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
 
     .logo {
       display: flex;
@@ -69,14 +68,10 @@ main{
   .hero {
     display: flex;
     background-image: url('src/assets/finaq-bg-query.png');
-    align-items: center;
-    justify-content: center;
     height: 50vh;
-    width: 1230px;
+    width: 100%;
     position: relative;
-    margin-top: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin-top: 40px;
 
     .Container-carrosel {
       width: 55%;
