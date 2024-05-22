@@ -1,8 +1,10 @@
-export default function NavBar(){
+import React, { useState } from "react";
+import Modal from "../modal/Modal";
 
-    
-    
-    
+
+export default function NavBar(){
+const [openmodal, setOpenModal] = useState(false)
+
     return(
         <div className="header" >
 
@@ -13,13 +15,13 @@ export default function NavBar(){
             </div>
 
             <div className="link-btn">
-                <a className="link" href="https://www.finaq.com.br/#hero">Inicio</a>
+                <a className="link" href="#inicio">Inicio</a>
                 <a className="link" href="#Sobre">Sobre</a>
                 <a className="link" href="#beneficios">Benefícios</a>
                 <a className="link" href="#como-participar">Como Participar</a>
                 <a className="link" href="#perguntas">Perguntas Freguentes</a>
-                <button className="cad-btn" type="button">Inscreva-se</button>
-            </div>
+                <button className="cad-btn" type="button" id="openForm" onClick={() => <Modal/>}>Inscreva-se</button>
+            </div>               
         </div>
     );
 }

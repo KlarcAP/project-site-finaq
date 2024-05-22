@@ -12,7 +12,7 @@ export default function Carrosel() {
     
     return(
 
-        <div className="Container-carrosel">
+        <div id="inicio" className="Container-carrosel">
             <Swiper  
             slidesPerView={1}
             pagination={{clickable: true}} 
